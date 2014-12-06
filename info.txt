@@ -1,0 +1,3 @@
+number of sites to search: 163 
+number of sites searched: 2 
+number of emails collected: 25 
