@@ -34,4 +34,4 @@ example.txt contains newline separated web urls on which the email addresses are
 
 ## License
 
-[MIT License](https://github.com/ankitaggarwal011/CNN-Image-Processing/blob/master/LICENSE)
+[MIT License](https://github.com/ankitaggarwal011/email-crawler/blob/master/LICENSE)
