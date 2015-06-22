@@ -34,13 +34,13 @@ def download(max_iterations):
     iteration = 1
     while iteration <= int(max_iterations):
 
-        print iteration
+        print "Searching for emails..."
 
         ## We reached a dead end if there are no
         ## more sites in our to_search_list
 
         if len(to_search_list) == 0:
-            print "dead url end"
+            print "Dead URL end"
             break
 
         ## Get the first URL from the list of the URLs
@@ -119,9 +119,9 @@ def output_results():
     ## of sites we actually crawled, and the total number of
     ## emails collected.
 
-    print "number of sites to search: %s" % len(to_search_list)
-    print "number of sites searched: %s" % len(searched_list)
-    print "number of emails collected: %s" % len(email_list)
+    print "Number of sites to search: %s" % len(to_search_list)
+    print "Number of sites searched: %s" % len(searched_list)
+    print "Number of emails collected: %s" % len(email_list)
 
 def write_results():
 
@@ -131,9 +131,9 @@ def write_results():
 
     info_file_name = "info.txt"
     i = open("info.txt", "w")     ## create the file
-    i.write("number of sites to search: %s \n" % len(to_search_list))
-    i.write("number of sites searched: %s \n" % len(searched_list))
-    i.write("number of emails collected: %s \n" % len(email_list))
+    i.write("Number of sites to search: %s \n" % len(to_search_list))
+    i.write("Number of sites searched: %s \n" % len(searched_list))
+    i.write("Number of emails collected: %s \n" % len(email_list))
     i.close()
 
     ## Write down all the emails collected into a file called
@@ -169,7 +169,6 @@ def get_input():
     return filename
 
 def main():
-
     filename = get_input()
     with open(filename) as f:
         content = f.readlines()
